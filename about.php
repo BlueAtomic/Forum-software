@@ -9,10 +9,16 @@
 <?php include_once 'scripts/php/discordusers.php' ?>
 
 <body>
-    <img class=userimage src="<?php echo getUser(341988909363757057)['avatar'] ?>">
-    <header><?php echo getUser(341988909363757057)['name']; ?></header>
-    <img class=userimage src="<?php echo getUser(839237573595365406)['avatar'] ?>">
-    <header><?php echo getUser(839237573595365406)['name'] ?></header>
+    <div class="ribbon">
+        <div class="user">
+            <img class="userimage" src="<?php echo getUser(341988909363757057)['avatar'] ?>">
+            <span class="name"><?php echo getUser(341988909363757057)['name']; ?></header>
+        </div>
+        <div class="user">
+            <img class="userimage" src="<?php echo getUser(839237573595365406)['avatar'] ?>">
+            <span class="name"><?php echo getUser(839237573595365406)['name'] ?></header>
+        </div>
+    </div>
 </body>
 
 </html>
