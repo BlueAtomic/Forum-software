@@ -29,7 +29,7 @@ function getUser(int $id): array
         $json_decode = json_decode($json_get, true);
 
         if (!$json_decode['id']) {
-            echo "<script> console.error('API callback failed. Key might be expired or not provided correctly.') </script>";
+            echo "<script>   console.error('API callback failed. Key might be expired or not provided correctly.') </script>";
         } else {
             $username = $json_decode['username'];
             $username .= "#";

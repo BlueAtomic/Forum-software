@@ -10,8 +10,11 @@
 
 <body>
     <img src="<?php
-                getUser(341988909363757057)['avatar'];
+                echo getUser(341988909363757057)['avatar'];
                 ?>">
+    <header><?php
+            echo getUser(341988909363757057)['name'];
+            ?></header>
 </body>
 
 </html>
