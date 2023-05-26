@@ -25,6 +25,24 @@ div.ribbon {
     transform: translateY(-50%);
 }
 
+div.ribbon::before,
+div.ribbon::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: orange;
+}
+
+div.ribbon::before {
+    top: -6px;
+}
+
+div.ribbon::after {
+    bottom: -6px;
+}
+
 .name {
     display: block;
     font-family: Arial, Helvetica, sans-serif;
