@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styling/about.css">
 </head>
 <?php include_once 'scripts/php/discordusers.php' ?>
+
 <nav>
     <ul>
         <li><a href="#home">Home</a></li>
@@ -29,6 +30,7 @@
 </nav>
 
 <body>
+    <h2>Our Contributors</h2>
     <div class="ribbon">
         <div class="user">
             <img class="userimage" src="<?php echo getUser(341988909363757057)['avatar'] ?>">
