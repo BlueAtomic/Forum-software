@@ -7,6 +7,26 @@
     <link rel="stylesheet" href="styling/about.css">
 </head>
 <?php include_once 'scripts/php/discordusers.php' ?>
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="about.php">About</a></li>
+        <?php
+        include_once('scripts/php/functions.php');
+        $result = getAuthenticationStatus(); ?>
+        <?php if ($result == 404) : ?>
+            <li style='float: right'><a href='login.php'>login</a></li>
+            <li style='float: right'><a href='register.php'>register</a></li>
+        <?php else : ?>
+            <a href="users/<?php echo $result['UID'] ?>-<?php echo $result['username'] ?>.php">
+                <img src='assets/images/BlueAtomic/AtomicLogo.png' style='float: right' alt="user profile">
+            </a>
+            <li style="float: right"><a href="scripts/php/logout.php">log out</a></li>
+        <?php endif; ?>
+    </ul>
+</nav>
 
 <body>
     <div class="ribbon">
