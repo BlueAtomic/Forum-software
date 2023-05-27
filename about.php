@@ -30,7 +30,7 @@
 </nav>
 
 <body>
-    <h2>Our Contributors</h2>
+    <h2>Our Team</h2>
     <div class="ribbon">
         <div class="user">
             <img class="userimage" src="<?php echo getUser(341988909363757057)['avatar'] ?>">
