@@ -1,0 +1,98 @@
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #565656;
+}
+
+nav .active {
+    background-color: #04AA6D;
+}
+
+nav img {
+    height: 3rem;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.userimage {
+    height: 8rem;
+    width: 8rem;
+    margin: 25px;
+    display: block;
+    border-radius: 50%;
+}
+
+.user {
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+}
+
+div.ribbon {
+    background-color: chocolate;
+    height: 18rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 65%;
+    transform: translateY(-50%);
+}
+
+div.ribbon::before,
+div.ribbon::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: orange;
+}
+
+div.ribbon::before {
+    top: -6px;
+}
+
+div.ribbon::after {
+    bottom: -6px;
+}
+
+.name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 25px
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    margin-bottom: 25px;
+    text-align: center;
+    display: block;
+    margin-top: 15%;
+}
