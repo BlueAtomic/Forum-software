@@ -31,7 +31,7 @@ function getUser(int $id): array
         if (!$json_decode['id']) {
             echo "<script> console.error('API callback failed. Key might be expired or not provided correctly.') </script>";
         } else {
-            if ($json_decode['display_name'] != null) {
+            if ($json_decode['discriminator'] == "0") {
                 $username = $json_decode['display_name'];
                 $pomelousername = "(@" . $json_decode['username'] . ")";
             } else {
