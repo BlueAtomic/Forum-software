@@ -35,9 +35,7 @@ function getUser(int $id): array
                 $username = $json_decode['display_name'];
                 $pomelousername = "(@" . $json_decode['username'] . ")";
             } else {
-                $username = $json_decode['username'];
-                $username .= "#";
-                $username .= $json_decode['discriminator'];
+                $username = $json_decode['username'] . "#" . $json_decode['discriminator'];
                 $pomelousername = "";
             };
             if ($json_decode['avatar']) {
