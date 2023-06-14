@@ -31,10 +31,11 @@ function getUser(int $id): array
         if (!$json_decode['id']) {
             echo "<script> console.error('API callback failed. Key might be expired or not provided correctly.') </script>";
         } else {
-            $username = $json_decode['username'];
-            $username .= "#";
-            $username .= $json_decode['discriminator'];
-
+            if ($json_decode['discriminator'] == "0") {
+                $username = "@" . $json_decode['username'];
+            } else {
+                $username = $json_decode['username'] . "#" . $json_decode['discriminator'];
+            };
             if ($json_decode['avatar']) {
                 $avatar = 'https://cdn.discordapp.com/avatars/' . $id . '/' . $json_decode['avatar'] . '?size=2048';
             }
@@ -42,6 +43,6 @@ function getUser(int $id): array
     }
     return array(
         "name" => $username,
-        "avatar" => $avatar
+        "avatar" => $avatar,
     );
 }
