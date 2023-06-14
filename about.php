@@ -34,35 +34,35 @@
     <div class="ribbon">
         <div class="user">
             <img class="userimage" src="<?php echo getUser(839237573595365406)['avatar'] ?>">
-            <span class="name"><?php echo getUser(839237573595365406)['name'] ?><br><?php echo getUser(839237573595365406)['username']; ?></header>
+            <span class="name"><?php echo getUser(839237573595365406)['name'] ?></header>
         </div>
         <div class="user">
             <img class="userimage" src="<?php echo getUser(513072262409355274)['avatar'] ?>">
-            <span class="name"><?php echo getUser(513072262409355274)['name'] ?><br><?php echo getUser(513072262409355274)['username']; ?></header>
+            <span class="name"><?php echo getUser(513072262409355274)['name'] ?></header>
         </div>
         <div class="user">
             <img class="userimage" src="<?php echo getUser(341988909363757057)['avatar'] ?>">
-            <span class="name"><?php echo getUser(341988909363757057)['name']; ?><br><?php echo getUser(341988909363757057)['username']; ?></header>
+            <span class="name"><?php echo getUser(341988909363757057)['name']; ?></header>
         </div>
         <div class="user">
             <img class="userimage" src="<?php echo getUser(104933285506908160)['avatar'] ?>">
-            <span class="name"><?php echo getUser(104933285506908160)['name'] ?><br><?php echo getUser(104933285506908160)['username']; ?></header>
+            <span class="name"><?php echo getUser(104933285506908160)['name'] ?></header>
         </div>
         <div class="user">
             <img class="userimage" src="<?php echo getUser(715898328973574185)['avatar'] ?>">
-            <span class="name"><?php echo getUser(715898328973574185)['name'] ?><br><?php echo getUser(715898328973574185)['username']; ?></header>
+            <span class="name"><?php echo getUser(715898328973574185)['name'] ?></header>
         </div>
         <div class="user">
             <img class="userimage" src="<?php echo getUser(820255805257023498)['avatar'] ?>">
-            <span class="name"><?php echo getUser(820255805257023498)['name'] ?><br><?php echo getUser(820255805257023498)['username']; ?></header>
+            <span class="name"><?php echo getUser(820255805257023498)['name'] ?></header>
         </div>
         <div class="user">
             <img class="userimage" src="<?php echo getUser(912852147392102421)['avatar'] ?>">
-            <span class="name"><?php echo getUser(912852147392102421)['name'] ?><br><?php echo getUser(912852147392102421)['username']; ?></header>
+            <span class="name"><?php echo getUser(912852147392102421)['name'] ?></header>
         </div>
         <div class="user">
             <img class="userimage" src="<?php echo getUser(584672380085862407)['avatar'] ?>">
-            <span class="name"><?php echo getUser(584672380085862407)['name'] ?><br><?php echo getUser(584672380085862407)['username']; ?></header>
+            <span class="name"><?php echo getUser(584672380085862407)['name'] ?></header>
         </div>
     </div>
 </body>
